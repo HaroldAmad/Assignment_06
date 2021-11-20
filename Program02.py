@@ -1,17 +1,24 @@
 import random
-questions = {}
 score = 0
+questions = {}
 
 for i in range(10):
     first_number = random.randint(0,99)
     second_number = random.randint(0,99)
-    operator = ['+']
-    questions = str(first_number) +''+ str(operator) +''+ str(second_number)
-    answer = eval(questions)
-    questions+=': '
+    operation = ('+')
+    question = str(first_number)+" "+operation+" "+str(second_number)
+    answer = str(eval(question))
+    question+='= '
 
-    questions.update ({questions:str(answer)})
+    questions.update({question:answer})
 
 for q in questions.keys():
-    user_answer = input (q)
-    if questions.get(q) == user_answer:
+    user_answer = input(q)
+    if questions.get(q)==user_answer:
+        score+=1
+        print("Correct!")
+    else:
+        print("Incorerct!")
+    
+print('You got '+str(score)+'/10. ')
+
