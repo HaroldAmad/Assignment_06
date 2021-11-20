@@ -51,3 +51,5 @@ elif d > c and c > a and a > b:
     print(f"{d},{c},{a},{b}")
 elif d > c and c > b and b > a:
     print(f"{d},{c},{b},{a}")
+else:
+    pass
