@@ -39,4 +39,15 @@ elif c > d and d > a and a > b:
     print(f"{c},{d},{a},{b}")
 elif c > d and d > b and b > a:
     print(f"{c},{d},{b},{a}")
-
+elif d > a and a > b and b > c:
+    print(f"{d},{a},{b},{c}")
+elif d > a and a > c and c > b:
+    print(f"{d},{a},{c},{b}")
+elif d > b and b > a and a > c:
+    print(f"{d},{b},{a},{c}")
+elif d > b and b > c and c > a:
+    print(f"{d},{b},{c},{a}")
+elif d > c and c > a and a > b:
+    print(f"{d},{c},{a},{b}")
+elif d > c and c > b and b > a:
+    print(f"{d},{c},{b},{a}")
